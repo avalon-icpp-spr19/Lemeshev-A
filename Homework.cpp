@@ -1,10 +1,10 @@
 #include <iostream>
 #include <limits>
 using namespace std;
-const float PI = 3.14159;
+const float PI = 3.14159F;
 const int Days_In_Year = 365;
 const int Days_In_Week = 7;
-int Main() {
+int main() {
 	int a;
 	unsigned int b;
 	short int c;
@@ -28,5 +28,5 @@ int Main() {
 	4-float
 	*/
 	float doublepi = PI * 2;
-	char Weeks_in_Year = Days_In_Year / Days_In_Week;
+	unsigned char Weeks_in_Year = Days_In_Year / Days_In_Week;
 }
