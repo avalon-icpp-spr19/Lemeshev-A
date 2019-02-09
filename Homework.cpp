@@ -16,10 +16,10 @@ int main() {
 	d = numeric_limits<char>::max();
 	int first = 0B11111111111111111111111111111111;
 	const short int second = 0XFF;
-	const long long int third = 0754321;
+	const long long int third = 0754321LL;
 	bool fourth = 0B1;
 	char fifth = 'f';
-	unsigned int sixth = 0XF;
+	unsigned int sixth = 0XFU;
 	const long long int seventh = 0xFFFFFFFFFFFFFFFF;
 	/*
 	1-Unsigned char
