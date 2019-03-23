@@ -3,7 +3,7 @@
 #include <limits>
 void space(int n, char c)
 {
-	for (int i = 0; i <= n; ++i)
+	for (int i = 0; i < n; ++i)
 	{
 		std::cout << c;
 	}
@@ -121,19 +121,18 @@ int main()
 		Выведите получившейся массив на экран в виде одной строки.
 		Выведите на экран как часто каждая буква встречается в сгенерированном массиве.
 		Выведите на экран вертикальную гистограмму рассчитанной частоты символов.*/
-	/*int mass[26]{};
-	char char_mass[26]{ 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' };
+/*	int mass[26]{};
+	int x;
+	char char_mass[100];
 	for (int i = 0; i < 100; ++i)
 	{
-		mass[ext::GetRandomValue(0, 25)] ++;
+		char_mass[i]=ext::GetRandomValue('a', 'z');
+		mass[char_mass[i] - 'a']+=1;
+		std::cout << char_mass[i];
 	}
 	for (int i = 0; i < 26; ++i)
 	{
-		space(mass[i], char_mass[i]);
-	}
-	for (int i = 0; i < 26; ++i)
-	{
-		std::cout << std::endl<<'|';
+		std::cout << std::endl<<char(i+'a')<<'|';
 		space(mass[i], '*');
 	}
 	/*=============================================================================================================*/
